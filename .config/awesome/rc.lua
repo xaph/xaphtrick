@@ -44,7 +44,7 @@ layouts =
 tags = {}
 for s = 1, screen.count() do
     -- Each screen has its own tag table.
-    tags[s] = awful.tag({ "web", "work", 3, 4, 5, 6, 7, 8, 9 }, s)
+    tags[s] = awful.tag({ "web", "work", "chat", "mail", 5, 6, 7, 8, 9 }, s)
 end
 -- }}}
 
@@ -322,7 +322,7 @@ client.add_signal("focus", function(c) c.border_color = beautiful.border_focus e
 client.add_signal("unfocus", function(c) c.border_color = beautiful.border_normal end)
 -- }}}
 
-
+--[[
 -- Wicked widgets
 memwidget = widget({
 	type = 'textbox',
@@ -347,3 +347,4 @@ mystatebar.widgets = {
 }
 mystatebar.layout = widget.layout.horizontal.leftright
 mystatebar.screen = 1
+]]--
