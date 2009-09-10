@@ -24,11 +24,11 @@ modkey = "Mod4"
 -- Table of layouts to cover with awful.layout.inc, order matters.
 layouts =
 {
-    awful.layout.suit.fair,
     awful.layout.suit.tile,
     awful.layout.suit.tile.left,
     awful.layout.suit.tile.bottom,
     awful.layout.suit.tile.top,
+    awful.layout.suit.fair,
     awful.layout.suit.fair.horizontal,
     awful.layout.suit.spiral,
     awful.layout.suit.spiral.dwindle,
@@ -44,7 +44,7 @@ layouts =
 tags = {}
 for s = 1, screen.count() do
     -- Each screen has its own tag table.
-    tags[s] = awful.tag({ "web", "work", "chat", "mail", 5, 6, 7, 8, 9 }, s)
+    tags[s] = awful.tag({ "web", "work", 3, 4, 5, 6, 7, 8, 9 }, s)
 end
 -- }}}
 
@@ -59,7 +59,9 @@ myawesomemenu = {
 
 -- {{{ Menu
 mymainmenu = awful.menu({ items = { { "awesome", myawesomemenu, beautiful.awesome_icon },
-                                    { "open terminal", terminal }
+                                    { "open terminal", terminal },
+                                    { "firefox", "firefox" },
+                                    { "file manager", "pcmanfm" }
                                   }
                         })
 
@@ -321,7 +323,6 @@ client.add_signal("unfocus", function(c) c.border_color = beautiful.border_norma
 -- }}}
 
 
---[[
 -- Wicked widgets
 memwidget = widget({
 	type = 'textbox',
@@ -346,4 +347,3 @@ mystatebar.widgets = {
 }
 mystatebar.layout = widget.layout.horizontal.leftright
 mystatebar.screen = 1
-]]--
