@@ -63,8 +63,13 @@ floatapps =
 -- Use the screen and tags indices.
 apptags =
 {
-    ["Iceweasel"] = { screen = 1, tag = 2 },
-    -- ["mocp"] = { screen = 2, tag = 4 },
+ 	["Iceweasel"] = { screen = 1, tag = 1 },
+	["Pidgin"] = { screen = 1, tag = 3 },
+	["Icedove"] = { screeen = 1, tag = 4 },
+	["Claws-mail"] = { screeen = 1, tag = 4 },
+	["Rhythmbox"] = { screen = 1, tag = 5 },
+	["Thunar"] = { screen = 1, tag = 6 },
+	["Deluge"] = { screen = 1, tag = 7 },
 }
 
 -- Define if we want to use titlebar on all applications.
@@ -82,22 +87,12 @@ for s = 1, screen.count() do
         tags[s][tagnumber] = tag(tagnames[tagnumber])
         -- Add tags to screen one by one
         tags[s][tagnumber].screen = 1
-        awful.layout.set(taglayouts[tagnumber], tags[s][tagnumber])
+        awful.layout.set(layouts[tagnumber], tags[s][tagnumber])
     end
     -- I'm sure you want to see at least one tag.
     tags[s][1].selected = true
 end
 
-apptags = 
-{
-	["Iceweasel"] = { screen = 1, tag = 1 },
-	["Pidgin"] = { screen = 1, tag = 3 },
-	["Icedove"] = { screeen = 1, tag = 4 },
-	["Claws-mail"] = { screeen = 1, tag = 4 },
-	["Rhythmbox"] = { screen = 1, tag = 5 },
-	["Thunar"] = { screen = 1, tag = 6 },
-	["Deluge"] = { screen = 1, tag = 7 },
-}
 -- }}}
 
 -- {{{ Wibox
