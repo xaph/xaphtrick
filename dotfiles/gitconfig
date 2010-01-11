@@ -1,0 +1,9 @@
+[user]
+	name = Zafer CAKMAK
+	email = zafer@zeitin.com
+
+[alias]
+	getir = pull
+	gotur = push
+	st = status
+	lp = log -p
