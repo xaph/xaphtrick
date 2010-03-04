@@ -301,7 +301,7 @@ awful.rules.rules = {
     { rule = { class = "gimp" },
       properties = { floating = true } },
     -- Set Firefox to always map on tags number 2 of screen 1.
-    { rule = { class = "Iceweasel" },
+    { rule = { class = "Rxvt-unicode" },
       properties = { tag = tags[1][1] } },
     { rule = { class = "Icedove" },
       properties = { tag = tags[1][4] } },
@@ -348,5 +348,5 @@ client.add_signal("unfocus", function(c) c.border_color = beautiful.border_norma
 -- {{{ AutoStart Applications
 awful.util.spawn_with_shell("firefox")
 awful.util.spawn_with_shell("pidgin")
-awful.util.spawn_with_shell("icedove")
 awful.util.spawn_with_shell("thunar")
+awful.util.spawn_with_shell("rxvt-unicode -e alpine")
