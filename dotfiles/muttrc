@@ -1,0 +1,22 @@
+#set sender email address
+set from=yourmailaddresforheader
+
+set spoolfile=imap://imap.zeitin.com/INBOX
+set imap_user=yourusername
+set imap_pass=yourpassword
+set folder=imap://imap.zeitin.com/INBOX
+set record="=Sent"
+set postponed="=Drafts"
+set folder=imap://imap.zeitin.com/INBOX/trac
+
+# how often to check for new mail (time in seconds)
+set mail_check = 120
+
+set my_pass='yourpasswordwillcomehere'
+set my_user=yourusername
+
+set smtp_url=smtp://$my_user:$my_pass@smtp.zeitin.com:587
+set ssl_force_tls = yes
+
+# sets vim as editor
+set editor=vim
