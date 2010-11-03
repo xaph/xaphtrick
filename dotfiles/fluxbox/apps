@@ -1,0 +1,12 @@
+[app] (name=fbrun)
+  [Layer]	{2}
+[end]
+[app] (class=firefox-bin)
+  [Workspace]	{0}
+[end]
+[app] (name=thunderbird)
+  [Workspace]	{1}
+[end]
+[app] (name=pidgin)
+  [Workspace]	{2}
+[end]
