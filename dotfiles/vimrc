@@ -66,6 +66,8 @@ set wildmenu
 "set nowrap
 set ai
 "set mouse=
+"show statusline always
+set laststatus=2
 
 filetype plugin on
 
