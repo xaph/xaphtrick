@@ -71,14 +71,17 @@ set laststatus=2
 
 filetype plugin on
 
+" hack for using php snippets on html or vice versa
+au BufRead,BufNewFile *.php set filetype=php.html
+au BufRead,BufNewFile *.html set filetype=php.html
+
 " Source a global configuration file if available
 if filereadable("/etc/vim/vimrc.local")
   source /etc/vim/vimrc.local
 endif
 
-iab chlog <c-r>=strftime("%Y-%m-%d")<cr>  Zafer CAKMAK  <zafer@zeitin.com><cr>
+iab chlog <c-r>=strftime("%Y-%m-%d")<cr>  Zafer CAKMAK  <mzcakmak@gmail.com><cr>
 
-map <F4> :set filetype=java
 map <F2> :set expandtab
 map <F9> :set paste<CR>
 map <F10> :1,$s/[ <tab>]*$//
