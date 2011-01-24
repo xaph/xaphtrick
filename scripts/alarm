@@ -1,0 +1,20 @@
+#!/bin/bash
+
+if [ $# -eq 1 ]; then
+	time=$1;
+else
+	echo "Please enter time in type of seconds!!"
+	exit;
+fi
+
+sec=0;
+while [ $sec -lt $time ]; do
+	let remaining=$time-$sec;
+	echo "Your alarm will ring in $remaining seconds";
+	let sec=$sec+1;
+	sleep 1;
+done;
+
+while true; do
+	mplayer NothingElseMatters.mp3
+done;
