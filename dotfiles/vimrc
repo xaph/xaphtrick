@@ -47,10 +47,10 @@ set incsearch		" Incremental search
 "set hidden             " Hide buffers when they are abandoned
 set mouse-=a		" Disable mouse usage
 "set tabstop=4
-set tabstop=4
-set shiftwidth=4
-set softtabstop=4
-"set expandtab
+set tabstop=2
+set shiftwidth=2
+set softtabstop=2
+set expandtab
 set backspace=indent,eol,start
 set fileencoding=utf-8
 set encoding=utf-8
@@ -68,6 +68,10 @@ set ai
 "set mouse=
 "show statusline always
 set laststatus=2
+
+"pathogen
+call pathogen#helptags()
+call pathogen#runtime_append_all_bundles()
 
 filetype plugin on
 
