@@ -86,8 +86,11 @@ endif
 
 iab chlog <c-r>=strftime("%Y-%m-%d")<cr>  Zafer CAKMAK  <mzcakmak@gmail.com><cr>
 
+"ii to exit insert mode
+imap ii <Esc>
+
 map <F2> :set expandtab
 map <F9> :set paste<CR>
 map <F10> :1,$s/[ <tab>]*$//
 
-colorscheme ron
+colorscheme 256-jungle
