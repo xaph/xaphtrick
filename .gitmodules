@@ -23,3 +23,6 @@
 [submodule "dotfiles/vim/bundle/wombat256"]
 	path = dotfiles/vim/bundle/wombat256
 	url = https://github.com/vim-scripts/wombat256.vim.git
+[submodule "dotfiles/vim/bundle/matchit"]
+	path = dotfiles/vim/bundle/matchit
+	url = https://github.com/vim-scripts/matchit.zip.git
