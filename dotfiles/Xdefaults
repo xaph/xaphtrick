@@ -1,40 +1,38 @@
 !------------------------------------------------------------------------------
 ! c o l o r -  s e t t i n g s
 
-*background: #1c1c1c
-*foreground: #626262
-
-! Default
-! 0: black
-*color0:  #262626
-*color8:  #1c1c1c
-! 1: red
-*color1:  #d70000
-*color9:  #d75f00
-! 2: green
-*color2:  #5f8700
-*color10: #585858
-! 3: yellow
-*color3:  #af8700
-*color11: #626262
-! 4: blue
-*color4:  #0087ff
-*color12: #808080
-! 5: magenta
-*color5:  #af005f
-*color13: #5f5faf
-! 6: cyan
-*color6:  #00afaf
-*color14: #8a8a8a
-! 7: white
-*color7:  #e4e4e4
-*color15: #ffffd7
+! Zenburn
+URxvt*background: #3F3F3F
+URxvt*foreground: #DCDCCC
+ black + red
+URxvt*color0: #1E2320
+URxvt*color1: #705050
+! green + yellow
+URxvt*color2: #60b48a
+URxvt*color3: #dfaf8f
+! blue + purple
+URxvt*color4: #506070
+URxvt*color5: #dc8cc3
+! cyan + white
+URxvt*color6: #8cd0d3
+URxvt*color7: #dcdccc
+! bright-black + bright-red
+URxvt*color8: #709080
+URxvt*color9: #dca3a3
+! bright-green + bright-yellow
+URxvt*color10: #c3bf9f
+URxvt*color11: #f0dfaf
+! bright-blue + bright-purple
+URxvt*color12: #94bff3
+URxvt*color13: #ec93d3
+! bright-cyan + bright-white
+URxvt*color14: #93e0e3
+URxvt*color15: #ffffff
 
 !------------------------------------------------------------------------------
 ! u r x v t
 
-URxvt*geometry:         112x22  
 URxvt*font:            xft:terminus:size=8
 URxvt*urlLauncher:         firefox  
 URxvt*scrollBar:        false
-URxvt*scrollColor:        #000000
+URxvt.visualBell:       true
