@@ -89,6 +89,12 @@ iab chlog <c-r>=strftime("%Y-%m-%d")<cr>  Zafer CAKMAK  <mzcakmak@gmail.com><cr>
 "ii to exit insert mode
 imap ii <Esc>
 
+"move cursor in insert mode :)
+imap <C-h> <C-o>h
+imap <C-j> <C-o>j
+imap <C-k> <C-o>k
+imap <C-l> <C-o>l
+
 map <F2> :set expandtab
 map <F9> :set paste<CR>
 map <F10> :1,$s/[ <tab>]*$//
