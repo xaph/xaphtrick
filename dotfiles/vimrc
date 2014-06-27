@@ -75,6 +75,8 @@ call pathogen#runtime_append_all_bundles()
 
 filetype plugin on
 
+set list listchars=tab:»·,trail:·
+
 " hack for using php snippets on html or vice versa
 au BufRead,BufNewFile *.php set filetype=php.html
 au BufRead,BufNewFile *.html set filetype=php.html
